@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <link rel="stylesheet" href="assets/style/responsive.css">
+        <script src="assets/js/script.js"></script>
+        <link name="description" content="Smart innovation est une entreprise spécialiisé dans l'instalation éléctrique moderne">
+        <title>Smart innovation</title>
+    </head>
+    <body>
+        <header class="topbar">
+            <div class="social">
+                <div class="icone"><a target="_blank" title="#" href="https://www.facebook.com/dan.ndala.56"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a></div>
+                <div class="icone"><a target="_blank" title="#" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXRJREFUSEvFlbsuRFEUhr9pNFPQaDRDLy4vwLwBSokErQTxBHgDxNQukSh5AzyBywugVqmU5Je15WTZ+5x9ZnIyuztnr/X/a/3rsls0fFoN4zM0gjlgF+gCkxVZvgH3wDHw5G1jGWwAZ31KtwmcF309gSJ/7BM8uM0XM/EEYl+vQfAJLJuU++Z3AUiF3+MJpGcnQSBHaTxmdVEg+lbEIrkxP2FMpQi+I+DPBiDHcbv/ACSnMh41UhH/w/UZxAgUzQSwBiwCsnkAroCvRM3+cKsIgp49YMtldwpsA7fAkrvLJtgDLi3iaQfyAswCB0AocG2JDoET4A6YcQShwAMRBIk0pTuO4AhQhgNJJEy14QiwCiwYiYp8DbQtu+SGqCqyHNWeK5E9oz2l3i+2Z2UNygZNUoRlphnQcMWO5kb30UmuuypiBKWrQqv5NRFZ7u/SZSeQRtd1iFKZqL9VyNTyC7bv9uCobbMenFwpsuyG9iZnRZdj9AO5y0cZdyMG3QAAAABJRU5ErkJggg=="/></a></div>
+                <div class="icone"><a target="_blank" title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvdleExBEEQhb+LgAzIABEgAkTgRIAIEAEhyAARkAGXAREgAuq7mrmanZuZ29uq/XNTdX92ut/r97qnb8LIZzIyPptHsA38rLDNmEvgFNgHPoFH4C7k+f05YuQWGWzAR4PkDTgs3Jsj4TXwUCLw8j0oOAMEyk+MqfFLMgsE8yJzBX9JplUoO7VMdU8Ndb/BgUVxOYHenWQAfvOnfQfAfYPgJRAsQlICm7cbwHYGvg8V36a5OcH3QOCY1mlwqQfaMLR68bSwM4F5D5wSG7Q1QMlXsLiTWloVTsp53qwehEv2lCzy2xHw2gMwDbF61S9tgdqycxJu1iA5rjzM5jZ1bH1s2tU6F2EXFWNqCrQpLrQauK/2qgWe90BQK97rYY0vVnDHunlKCqah0TYtkrnAbGC6NlZhz+837x+tl+x1gka36B/CnzgZFPaBJAAAAABJRU5ErkJggg=="/></a></div>
+                <div class="icone"><a target="_blank" href="https://wa.me/qr/6QMVANDBW4ZHM1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a></div>
+            </div>
+            <nav class="navbar">
+                <div class="navbar-div">
+                    <a href="#je_pose_mon_ancre"><img class="navbar-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtld0RQTEQhb/bgRZUgApQCSpBJXSCDqhACzpgjrm5E0nuzY/JE/uYbM63u3N20lA5msr65ABGwKktaAk8UopLBRjxaSt6BZIgqYAjsHIq1tkm1kUKICRudKOQGGAHbCNV7gHlBWMIsAYOsRG09xqVuvGiD5AjbkSDkBBATpEd5ZyckG3lLDmsCxdQKm4EPYgNUMX3gsrdLgUZm0W0AWptkjOTgVxpzXRfC3AD3lvf56JnYSee3m8B3G5DY/xqRH/AhzHPwNw6uQALx7opOVl/ctFqxD6cIlH70Qtl2ysZugObfgAAAABJRU5ErkJggg=="/></a>
+                    <a class="navbar-lien" href="#je_pose_mon_ancre">Home</a>
+                </div>
+                <div class="navbar-div">
+                    <a href="#about_us"><img class="navbar-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></a>
+                    <a class="navbar-lien" href="#about_us">About</a>
+                </div>
+                <di class="navbar-div">
+                    <a href="#voir_la_galerie"><img class="navbar-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJZJREFUSEvtlMkNgCAQRR8VWILaiaVoZVqKpWgHdqDhgDGQEQIZvcB5+NssBuVnlPGJEZyJAkSc3wkSDchlMQdqBKnZ+wICwZIDdYLiaBzA5z0YgBnoMi1swASskgNb0GaCu28Wo5cIcpsrTpPfg0oQRF8jkib6TubziA6gKVy0/XkJfAf2VCwF22zBx7dTUSg+/K5+TS/S9BYZ+RngMgAAAABJRU5ErkJggg=="/></a>
+                    <a class="navbar-lien" href="#voir_la_galerie">Galerie</a>
+                </div>
+                <div class="navbar-div">
+                    <a href="#contacter_nous"><img class="navbar-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATRJREFUSEvVle0xg0EURk8qkA5QASpABaggdEAF6IAKUAEqIB3QQUpIBzHH7Jqdtfsmu2SM+zO5ec4+9ysj1hyjNevzZ4AbYBM4A+Y/cZk7GAOPwEEQfQUOfxPwBuxkgvfBSRcnd7CoqHRDVgXIvQDsTVPkAGu+X1F4Bo6b1OHbmFqKSUHkPTS+eaJyB77QKUqjW1yR0pjOgI2EsA34WVeUNjkv0zVw1aVecKDOFuA+RBfWfa/gwqW8AxyM29oDarfIF18mPxJ4kkAUfwF2Q051T4aO3RNwlEB04h48hEGI4jGlCBkC+Ert56djqB3m6/RrnJedayE6qS1fCabD0/jFMkDMsyfn2fjWnNhwcz9jVUCcLkEuY7onKWianPpmQBSybEL8z3CkY/mKG9/ioGvX/j/gA/otMRlG5rFpAAAAAElFTkSuQmCC"/></a>
+                    <a class="navbar-lien" href="#contacter_nous">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <section  id="je_pose_mon_ancre" class="ma_section">
+            <div class="baniere">
+                <div>
+                    <h2 class="reveal-1">Smart</h2><br>
+                    <h2 class="reveal-2">innovation</h2>
+                </div>
+                <div>
+                    <p class="reveal-3">Le proffesionnalisme dans la jeunesse</p><br>
+                    <p class="reveal-4">Vos projets sont assurés</p>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="device reveal">
+                <div class="about-icone">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVlJREFUSEu1lWFRAzEQhb8qgCoAHIACWgWAgoICQAE4oHUACgAFUAXgABxAFZR5naST5rLZHDO3f24u2by3+3azGTGwjQbGpw/BPnAH6HsL/LYE10pwCDwDxwH0E7gC9K1aC4FA30LkKZgymHokHoEFHolckhqBtFbkURZLCpEcWTWpEbwAZ57GYV++FyVfi+A8FLURf+Omoj/mByyCb+CgDzqgM5Jqx0oE/4k+gkomybW1EoHSnPWMPro/AZcewTtwahCchHX57BV8lsDEI1gb4GkRBaIWdhunJJH6Oo/uFVBtUrsPsyldW+U3vkRQkkjdoS7JLe+2JonyIncKl7DcAA/Jf1ORNTm/kkMaaMqqZBojH8lGJ1Pros2B63DQG4ixKRaAMtqx2uEo1bjyuGgg/gCmjF506hQVsjNjQpi6VJJUfn7PGj6K0noea3sbOC8DK7Dm9cEJ/gCqwzoZ5ItDCwAAAABJRU5ErkJggg=="/>
+                </div>
+                <h3>Notre devise</h3>
+                <p>Votre satisfaction est notre priorité</p>
+            </div>
+            <div class="device reveal">
+                <div class="about-icone">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvFVcENwjAMvE4CTABsBJPBSLABbIIO1ZWVnqM6StS+oursu7OdeMLgbxqcH7sSvACcNzok9qqwkYMbgMfG5Aa7A3iWMRHBB8BhBvN8qpCZGIlTBBbwnZOSSKpzpCZohVMEHswcLFWzi5LAqz+6EjW7KAmU1WqNXZkkzhMo9RYf1rho/grnCWpJsmO79GwUASfw30NVIjUxXUpEwlqTF1XBpZM9jMbUu2hWX5ZITYxdtCb1EYGfZ2LYrK5Phe8Fz83qIwf8n517xqSeawZkFs4bwCWzcJK7JobvupO7uPgBM0hQGeFcr2gAAAAASUVORK5CYII="/>     
+                </div>
+                <h3>Notre mission</h3>
+                <p>Assurés vos projets en vous offrant un service de qualité</p>
+            </div>
+            <div class="device reveal">
+                <div class="about-icone">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaxJREFUSEu9lYExBEEQRd9FgAgQASJABkSACBABIkAEiAARIAJEgAgQAfWuuq/m5ub2jiu6amt3Znf+n/7zu7fHH0fvj/GZhmAXWAdW43JPT3HdALddm+wi2AJOgaUJWb4Ch4BkIzGO4AzYb3y/FnOPjXeukWgoWgQJ/gkchyw7wEmMBXD+KOS5j/EccA4clAw1gbJcA4JvAKb/HguWY+xwPp4Fdd6xRI63S7lqAgEXgT3gEvCAL2Knkpfh+zKz/FYMSftREuQHz4VbEkRtla6MzPYhsk13rZRZlAQtMNPWopshQUmgLMr3ASzEC/XXeVeR/VAGelt2neKz8RV3AQSqwzl1z/fWig5zfd9xZQYJ1sD51VQf+18JWhLVEkwr0cAosxxyeUaJ03nIabvBAUUt6PWsi5ls6uK60HJHdsy60LKlZHvIb9/KBjmuVai93vf+EnerM61qDTjvPRvgXYw7W4VZ5M4Es6m5wGJrNTur2GK080o2sdmlxpPade62PJMR8LoOaguquUQ2v65Qc/X/0Q+ndotktgFbiaHPdZugTeAEmOaf/Ks+8W8E39T2dhnnD3rTAAAAAElFTkSuQmCC"/>
+                </div>
+                <h3>Notre vision</h3>
+                <p>Vous offrir un travail de qualité à moindre coût</p>
+            </div>
+        </section>
+        <section>
+            <div id="about_us" class="presentation reveal">
+                <h3>Présentation</h3>
+                <p>La compétence essentielle de notre entreprise réside avant toute chose dans la planification et le montage d' installations électriques de base dans le respect des normes techniques,les plus modernes qui soient, tant pour les travaux neufs que dans le cadre des travaux de rénovation. <br> <br> Outre l'instalation de base réalisée dans des maisons d'habitation et des résidences privées, nous procédons également à la mise en place d'installation électriques complexes dans des bâtiment à usage commercial, industriel et agricol.</p>
+            </div>
+            <div class="image_for_presentation reveal">
+                <img src="image/presentation.jpg" alt="Photo pour la Présentation">
+            </div>
+        </section>
+        <section>
+            <h3 class="service-title">Nos services</h3>
+            <div class="contenair-service reveal">
+                <div>
+                    <div class="service">
+                        <div>
+                            <img class="service-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVtJREFUSEu1leExBEEQhb+LgAyQARkQARkgAkIgAiUDMiACMiADJwMioL6rnavZMbM9t+X6193O9ns9r1/3LthyLLaMTy/BIXAFXAwFPQC3wDIqsIdgH3gDdguwL+AoImkRCHoHHFeAy6IlegUuAX+PokbQqjhSQ/CDkqRG8AScRmiN82fgLD+rEdi4vZkE5nqLdZQEyvMxEzylSbB2V06gFV86mpqAvgHlPJ9yV06wifaC67D3gaTs2WOamZzgpyHN/fDyznCeg0/deoUdETitN4BAet1IlUeS/iFw/Gt6ngxSCGgoSwRelUgHmZykSIo5QInEZxG4EvrOykm9Nk0k5kROa9o0VdwatLRnyqWXe+MTUInmoHmwiV1L43WtilYvogFXe3NHG7W1rpVBV9msaC8pixa+7l3XZaWtG43c0rpezxfNXEkcuDQn+tz///LJjLSfPO+9wWySX/3sSRlkajjpAAAAAElFTkSuQmCC"/>    
+                        </div>
+                        <div>
+                            <p>Installation bâtiment</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img class="service-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVtJREFUSEu1leExBEEQhb+LgAyQARkQARkgAkIgAiUDMiACMiADJwMioL6rnavZMbM9t+X6193O9ns9r1/3LthyLLaMTy/BIXAFXAwFPQC3wDIqsIdgH3gDdguwL+AoImkRCHoHHFeAy6IlegUuAX+PokbQqjhSQ/CDkqRG8AScRmiN82fgLD+rEdi4vZkE5nqLdZQEyvMxEzylSbB2V06gFV86mpqAvgHlPJ9yV06wifaC67D3gaTs2WOamZzgpyHN/fDyznCeg0/deoUdETitN4BAet1IlUeS/iFw/Gt6ngxSCGgoSwRelUgHmZykSIo5QInEZxG4EvrOykm9Nk0k5kROa9o0VdwatLRnyqWXe+MTUInmoHmwiV1L43WtilYvogFXe3NHG7W1rpVBV9msaC8pixa+7l3XZaWtG43c0rpezxfNXEkcuDQn+tz///LJjLSfPO+9wWySX/3sSRlkajjpAAAAAElFTkSuQmCC"/>    
+                        </div>
+                        <div>
+                            <p>Dépannage électrique domestique</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="service">
+                        <div>
+                            <img class="service-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVtJREFUSEu1leExBEEQhb+LgAyQARkQARkgAkIgAiUDMiACMiADJwMioL6rnavZMbM9t+X6193O9ns9r1/3LthyLLaMTy/BIXAFXAwFPQC3wDIqsIdgH3gDdguwL+AoImkRCHoHHFeAy6IlegUuAX+PokbQqjhSQ/CDkqRG8AScRmiN82fgLD+rEdi4vZkE5nqLdZQEyvMxEzylSbB2V06gFV86mpqAvgHlPJ9yV06wifaC67D3gaTs2WOamZzgpyHN/fDyznCeg0/deoUdETitN4BAet1IlUeS/iFw/Gt6ngxSCGgoSwRelUgHmZykSIo5QInEZxG4EvrOykm9Nk0k5kROa9o0VdwatLRnyqWXe+MTUInmoHmwiV1L43WtilYvogFXe3NHG7W1rpVBV9msaC8pixa+7l3XZaWtG43c0rpezxfNXEkcuDQn+tz///LJjLSfPO+9wWySX/3sSRlkajjpAAAAAElFTkSuQmCC"/>    
+                        </div>
+                        <div>
+                            <p>Installation de panneaux solaires</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img class="service-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVtJREFUSEu1leExBEEQhb+LgAyQARkQARkgAkIgAiUDMiACMiADJwMioL6rnavZMbM9t+X6193O9ns9r1/3LthyLLaMTy/BIXAFXAwFPQC3wDIqsIdgH3gDdguwL+AoImkRCHoHHFeAy6IlegUuAX+PokbQqjhSQ/CDkqRG8AScRmiN82fgLD+rEdi4vZkE5nqLdZQEyvMxEzylSbB2V06gFV86mpqAvgHlPJ9yV06wifaC67D3gaTs2WOamZzgpyHN/fDyznCeg0/deoUdETitN4BAet1IlUeS/iFw/Gt6ngxSCGgoSwRelUgHmZykSIo5QInEZxG4EvrOykm9Nk0k5kROa9o0VdwatLRnyqWXe+MTUInmoHmwiV1L43WtilYvogFXe3NHG7W1rpVBV9msaC8pixa+7l3XZaWtG43c0rpezxfNXEkcuDQn+tz///LJjLSfPO+9wWySX/3sSRlkajjpAAAAAElFTkSuQmCC"/>    
+                        </div>
+                        <div>
+                            <p>Design électrique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projet">
+            <div class="box-contenair-projet reveal">
+                <div class="box-contenair-icone">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/>
+                </div>
+                <p class="big-lettre">8</p>
+                <p>Membres</p>
+            </div>
+            <div class="box-contenair-projet reveal">
+                <div class="box-contenair-icone">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALZJREFUSEvtldENgzAMRB8TdATKJh2FTtaO0lHoBmwACiKSIzU9NxAhpPJrcs93hrih8tNU1kcBbsADuGYaGYA78Mo1qgBBoBUuwztdKWBaD+YaUXUZkRJQ9QSg8vZ+D8lcrHVP3r9AlrlYQLTrFVHvLdqHA2IDOXff6i4HuwJUpkV1NYNdHXzKuTqgKBZ7vaiI/oDkTx6By5ZMzNl3XFJ2BuE2fToWjOohiPdxy6mNpsRk/fyAGQZsJRmfq4guAAAAAElFTkSuQmCC"/>
+                </div>
+                <p class="big-lettre">15</p>
+                <p>Réalisation</p>
+            </div>
+            <div class="box-contenair-projet reveal">
+                <div class="box-contenair-icone">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQNJREFUSEu1lOERAUEMRt9VQAsqQAXogApQASpABagAHegAHVCBFqiAyczeDG6zm72Zze8k78u3mxRkjiJzfyyAJjADhkDHCboBJ2AHPEMiY4AJsAEE4gtpPnUwb0IIIM33RgtHGkQDiOJHQPk/VyZp+ezSACtgaVRfpq0BqfsJDSCP2E4ESE3XCngnNi/TK4K1CbIDLkAvcYor0LdaNHf/P4WxALZWgOSlPPT9a8tNv0iS5CyIVY3IGC9njQiqROxUiKfnCGDghCSfirLgAIwVyBGQk6JGbAIpDN0k9Qapi+GREtuJoEjLBNkBKbuQ/IvKAm2KqAPRBEfIDqhtk3WC2oAPeqUlGWWCbuQAAAAASUVORK5CYII="/>
+                </div>
+                <p class="big-lettre">3</p>
+                <p>Partenaire</p>
+            </div>
+        </section>
+        <section class="recente-realisation reveal">
+            <h3 class="recente-realisation-title">Récente réalisation</h3>
+            <div class="recente-realisation-image">
+                <div id="carousel1">
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/lampe.jpg" alt="photo d'une lampe">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/plafond.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation14.jpg" alt="Photo d'une réalisation" >
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation28.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation29.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation31.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation34.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation15.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation16.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation20.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation22.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/disjoncteur.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation35.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation30.jpg" alt="Photo d'une réalisation">
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </section>
+        <section class="membres">
+            <h3>Membres</h3>
+            <div class="contenair-membres">
+                <div class="membre reveal">
+                    <img class="membre-image" src="image/technicien1.jpg" alt="photo des membres">
+                    <div>
+                        <h3>Bernard Ndala</h3>
+                    </div>
+                    <div>
+                        <p>Electronics and electrical engineer,<strong>Company director</strong></p>
+                    </div>
+                    <div>
+                        <p class="petite-phrase">faites le choix d'une main d'oeuvre jeune et proffessionnelle</p>
+                    </div>
+                    <div>
+                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
+                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <img class="membre-image" src="image/technicien7.jpg" alt="photo des membres">
+                    <div>
+                        <h3>Fuiny victor</h3>
+                    </div>
+                    <div>
+                        <p>Smart innovation's member</p>
+                    </div>
+                    <div>
+                        <p class="petite-phrase">L'avis d'un homme sage vaut un oracle</p>
+                    </div>
+                    <div>
+                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
+                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <img class="membre-image" src="image/technicien2.jpg" alt="photo des membres">
+                    <div>
+                        <h3>Allegresse Mujanda</h3>
+                    </div>
+                    <div>
+                        <p>Electronics engineer</p>
+                    </div>
+                    <div>
+                        <p class="petite-phrase">la force est dans la jeunesse</p>
+                    </div>
+                    <div>
+                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
+                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <img class="membre-image" src="image/technicien3.jpg" alt="photo des membres">
+                    <div>
+                        <h3>Gracias Mujanda</h3>
+                    </div>
+                    <div>
+                        <p>Electronics engineer</p>
+                    </div>
+                    <div>
+                        <p class="petite-phrase">Une jeunesse proffesionnelle</p>
+                    </div>
+                    <div>
+                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
+                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <img class="membre-image" src="image/technicien4.jpg" alt="photo des membres">
+                    <div>
+                        <h3>Asnath</h3>
+                    </div>
+                    <div>
+                        <p>Smart innovation's member</p>
+                    </div>
+                    <div>
+                        <div>
+                            <p class="petite-phrase">je  suis "smart innovation"</p>
+                        </div>
+                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
+                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <img class="membre-image" src="image/technicien5.jpg" alt="photo des membres">
+                    <div>
+                        <h3>Gift L</h3>
+                    </div>
+                    <div>
+                        <p class="petite-phrase">Smart innovation's member</p>
+                    </div>
+                    <div>
+                        <p>oeuvrons ensemble</p>
+                    </div>
+                    <div>
+                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
+                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <img class="membre-image" src="image/technicien6.jpg" alt="photo des membres">
+                    <div>
+                        <h3>Master emmanuel</h3>
+                    </div>
+                    <div>
+                        <p>Smart innovation's member</p>
+                    </div>
+                    <div>
+                        <p class="petite-phrase">je choisis smart et vous?</p>
+                    </div>
+                    <div>
+                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
+                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-temoignage">
+            <h3>Témoignage</h3>
+            <div class="contenair-temoins">
+                <div class="temoins reveal">
+                    <div>
+                        <img class="temois-image" src="image/jonathan.jpg" alt="Photo de Jean-Marie">
+                    </div>
+                    <div>
+                        <h3>Jonathann</h3>
+                        <p>Network engineer, client(e)</p>
+                        <p>De la jeunesse pour nos maisons, des solutions jeunes et innovates!!! je vous recommandes Smart innovation, vous ne serez jamais déçu. Le professionnalisme dans la simplicité.</p>
+                    </div>
+                </div>
+                <div class="temoins reveal">
+                    <div>
+                        <img class="temois-image" src="image/madame_julie.jpg" alt="Photo de Jean-Marie">
+                    </div>
+                    <div>
+                        <h3>Madame julie</h3>
+                        <p>lawyer,client(e)</p>
+                        <p>Globalement je suis très satisfaite de la prestation réalisée par l'entreprise et je vous la recommande</p>
+                    </div>
+                </div>
+                <div class="temoins reveal">
+                    <div>
+                        <img class="temois-image" src="image/monsieur_yves.jpg" alt="Photo de ruth">
+                    </div>
+                    <div>
+                        <h3>Yves Kabange</h3>
+                        <p>Doctor surgeon, client(e)</p>
+                        <p>Optez pour une main d'oeuvre professionnelle et jeune, et vous serez satisfait par la qualité du travaille, j'en suis témoin </p>
+                    </div>
+                </div>
+                <div class="temoins reveal">
+                    <div>
+                        <img class="temois-image" src="image/patient.jpg" alt="Photo de patient">
+                    </div>
+                    <div>
+                        <h3>Patient Kasongo</h3>
+                        <p>Dévellopeur web, client(e)</p>
+                        <p>Des nos jours, tout le monde a besoin d'une installation  électrique de qualité respectant toutes les normes techniques, je vous conseille vivement de choisir smart innovation, vous serez très satisfait</p>
+                    </div>
+                </div>
+                <div class="temoins reveal">
+                    <div>
+                        <img class="temois-image" src="image/kavira.jpg" alt="Photo de frankline">
+                    </div>
+                    <div>
+                        <h3>Frankline kavira</h3>
+                        <p>client(e)</p>
+                        <p>Choisir smart innovation,c'est choisir de soutenir la jeunesse, c'est choisir un travail de qualité, alors je choisis smart et vous?</p>
+                    </div>
+                </div>
+                <div class="temoins reveal">
+                    <div>
+                        <img class="temois-image" src="image/ruth.jpg" alt="Photo de clédia">
+                    </div>
+                    <div>
+                        <h3>Ruth Nzeng</h3>
+                        <p>client(e)</p>
+                        <p>J'ai été très satisfait par le travail réaliser par smart innovation, alors je me permet de dire "installation électrique de qualité=smart innovation"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="galerie reveal" id="voir_la_galerie">
+            <h3>Galerie</h3>
+            <div class="galerie-image-contenair">
+                <div id="carousel2">
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation7.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation18.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image"><img src="image/realisation12.jpg" alt="photo d'une réalisation"></div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation25.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation11.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation10.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation31.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation8.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/lampe.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/plafond.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation3.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation26.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation5.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation23.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation22.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation21.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation20.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation19.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation17.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation8.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation16.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation15.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation14.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation44.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation43.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation42.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation41.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation40.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation37.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation39.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation38.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation36.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation35.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation34.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation31.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation30.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation29.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation28.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation27.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation25.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation24.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation45.jpg" alt="photo d'une réalisation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section class="contact" id="contacter_nous">
+            <h3>Contact</h3>
+            <form action="" method="post">
+                <div class="contact-contenair">
+                    <div class="my-contact reveal">
+                        <div>
+                            <div class="my-contact-icone">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU5JREFUSEu1lO1RQkEMRQ8dSAVoBWgFWAJWoB2AnWgHUAF0IFagVoB2oBXIXGaXWfOyXzOSn2/z7sneJDvizDE6sz4tgEtgAdwC16Ggd2AHPAOfpSJrgKcgXtJQzmMuoQRQldNGC5V74+XmAC2VWz3ZtbQfPYA835vEr/CzKlWoFypiYvKubE88gK1e4hL8NmIXgIApZHALD2C9vwO2mV7MgU1yNuiFB/g1YmOn+pji2flH878BP4CsO4UH0ALNkpwei17DQhYBK+A+AWhTNeNek98A2RRjDTzUbqAn4cX0QRDN+Ef4rgXUtKXiOlIhcZSPqblF69niWMvAnhLAu0VmUk+fB9WXADrreS7cZ6IG0HmLVa418V6151ozrbHNvapquuy0E1YcU+t1DlIVb7EowiykSbwHoFxB1HiFdiJrS23RauPYdV5rcpeYl3wAl91AGYDJRKAAAAAASUVORK5CYII="/>
+                            </div>
+                            <div>
+                                <h3 class="contact-title">Location:</h3>
+                                <P class="contact-information">République Démocratique du Congo <br>Lubumbashi, commune Annexe <br> 70 avenue NKalanyi Q/ Malela</P>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="my-contact-icone">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARRJREFUSEvdlNFxwjAQRB8VJB0AFZAS0gmkg1BJ6ADSSUoIHUAHpAKYzdxlNLLkk834g+jHY/u073ZPoxkTr9nE+vxPwCuwBxYj4zsBb8CX9pciUsF8pLhvk8ayBrha1QXYAodG2Ab4AJ6t/rf5kgMHuK4AAglYWhKUsADpCgHKcQc8Ad+Wq57perF56fkDvNv7X/N9DvRPG+VgZQ7SyNJIjuZADXgCoQOHKwI5WVvrPhOP5NM69whDQG2mEvTIVOOR5IegCsiH2xlYEpn+CZjPRN/vArSc2NERtYj3OnCBWlStF2PoYHJAFEXfYfC9Z78sI9u5mOojgMR1wqq3aeqgBIgcdi+kQTsGFkcRDZTrlj8+4AaNzzgZuJBekwAAAABJRU5ErkJggg=="/>
+                            </div>
+                            <div>
+                                <h3 class="contact-title">Email</h3>
+                                <p class="contact-information">smartinnovation@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="my-contact-icone">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATRJREFUSEvVle0xg0EURk8qkA5QASpABaggdEAF6IAKUAEqIB3QQUpIBzHH7Jqdtfsmu2SM+zO5ec4+9ysj1hyjNevzZ4AbYBM4A+Y/cZk7GAOPwEEQfQUOfxPwBuxkgvfBSRcnd7CoqHRDVgXIvQDsTVPkAGu+X1F4Bo6b1OHbmFqKSUHkPTS+eaJyB77QKUqjW1yR0pjOgI2EsA34WVeUNjkv0zVw1aVecKDOFuA+RBfWfa/gwqW8AxyM29oDarfIF18mPxJ4kkAUfwF2Q051T4aO3RNwlEB04h48hEGI4jGlCBkC+Ert56djqB3m6/RrnJedayE6qS1fCabD0/jFMkDMsyfn2fjWnNhwcz9jVUCcLkEuY7onKWianPpmQBSybEL8z3CkY/mKG9/ioGvX/j/gA/otMRlG5rFpAAAAAElFTkSuQmCC"/>
+                            </div>
+                            <div>
+                                <h3 class="contact-title">Télephone</h3>
+                                <p class="contact-information">+243993071034</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-contact reveal">
+                        <div>
+                            <input type="text" required placeholder="Votre nom">
+                        </div>
+                        <div>
+                            <input type="email" required placeholder="Votre mail">
+                        </div>
+                        <div>
+                            <input type="email" required placeholder="Objet">
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10" required placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="boutton">Envoyer le message</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <p>Copyright 2022. all rights Reserved</p>
+            <p>Smart innovation</p>
+        </footer>
+    </body>
+</html>

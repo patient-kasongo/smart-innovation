@@ -1,0 +1,102 @@
+@media screen and (max-width:791px)
+{
+    .navbar
+    {
+        position:fixed;
+        bottom: 5px;
+        right: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+    }
+    .navbar-lien
+    {
+        display: none;
+        margin: 0;
+    }
+    .navbar-icone
+    {
+        display: inline-block;
+        width: 45px;
+        margin: 5px;
+    }
+    .navbar img
+    {
+        background-color: #FFFFFF;
+        margin: 3px;
+        padding: 7px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px rgba(0,0, 0, .5);
+    }
+    .navbar img:hover
+    {
+        background-color: #1268B3;
+    }
+    
+    .navbar a
+    {
+        padding: 1px;
+    } 
+    .topbar
+    {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .social
+    {
+        padding-left: 0;
+    }
+    .baniere
+    {
+        background-image: url(../../image/baniere3.jpg);
+        background-size: cover;
+        padding:0 0 20px 20px
+    }
+    .baniere p
+    {
+        color: #f1f7fd;
+        font-style: italic;
+    }
+    .image_for_presentation>img
+    {
+        width: 99%;
+        height: auto;
+    }
+    .presentation p
+    {
+        text-align: center;
+        margin:10px;
+    }
+    .my-contact input
+    {
+        margin: 10px 0;
+        width: 99%;
+        height: 35px;
+        font-size: 14px;
+    }
+    .my-contact textarea
+    {
+        width: 99%;
+        height: 70px;
+    }
+    .carousel__pagination{
+        display: block;
+    }
+    /* .recente-realisation-image,
+    .galerie-image-contenair
+    {
+        /*display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        min-height: 250px;
+        max-height: 300px;
+    } */
+    .footer
+    {
+        overflow: hidden;
+    }
+}
