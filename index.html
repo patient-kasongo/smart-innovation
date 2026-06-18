@@ -1,678 +1,795 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/style/style.css">
         <link rel="stylesheet" href="assets/style/responsive.css">
-        <script src="assets/js/script.js"></script>
-        <link name="description" content="Smart innovation est une entreprise spécialiisé dans l'instalation éléctrique moderne">
-        <title>Smart innovation</title>
+        <script src="assets/js/script.js" defer></script>
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+        <meta name="description" content="Smart Innovation est une entreprise spécialisée dans l'installation électrique moderne, domotique et solaire.">
+        <title>Smart Innovation</title>
     </head>
     <body>
         <header class="topbar">
-            <div class="social">
-                <div class="icone"><a target="_blank" title="#" href="https://www.facebook.com/dan.ndala.56"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a></div>
-                <div class="icone"><a target="_blank" title="#" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXRJREFUSEvFlbsuRFEUhr9pNFPQaDRDLy4vwLwBSokErQTxBHgDxNQukSh5AzyBywugVqmU5Je15WTZ+5x9ZnIyuztnr/X/a/3rsls0fFoN4zM0gjlgF+gCkxVZvgH3wDHw5G1jGWwAZ31KtwmcF309gSJ/7BM8uM0XM/EEYl+vQfAJLJuU++Z3AUiF3+MJpGcnQSBHaTxmdVEg+lbEIrkxP2FMpQi+I+DPBiDHcbv/ACSnMh41UhH/w/UZxAgUzQSwBiwCsnkAroCvRM3+cKsIgp49YMtldwpsA7fAkrvLJtgDLi3iaQfyAswCB0AocG2JDoET4A6YcQShwAMRBIk0pTuO4AhQhgNJJEy14QiwCiwYiYp8DbQtu+SGqCqyHNWeK5E9oz2l3i+2Z2UNygZNUoRlphnQcMWO5kb30UmuuypiBKWrQqv5NRFZ7u/SZSeQRtd1iFKZqL9VyNTyC7bv9uCobbMenFwpsuyG9iZnRZdj9AO5y0cZdyMG3QAAAABJRU5ErkJggg=="/></a></div>
-                <div class="icone"><a target="_blank" title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvdleExBEEQhb+LgAzIABEgAkTgRIAIEAEhyAARkAGXAREgAuq7mrmanZuZ29uq/XNTdX92ut/r97qnb8LIZzIyPptHsA38rLDNmEvgFNgHPoFH4C7k+f05YuQWGWzAR4PkDTgs3Jsj4TXwUCLw8j0oOAMEyk+MqfFLMgsE8yJzBX9JplUoO7VMdU8Ndb/BgUVxOYHenWQAfvOnfQfAfYPgJRAsQlICm7cbwHYGvg8V36a5OcH3QOCY1mlwqQfaMLR68bSwM4F5D5wSG7Q1QMlXsLiTWloVTsp53qwehEv2lCzy2xHw2gMwDbF61S9tgdqycxJu1iA5rjzM5jZ1bH1s2tU6F2EXFWNqCrQpLrQauK/2qgWe90BQK97rYY0vVnDHunlKCqah0TYtkrnAbGC6NlZhz+837x+tl+x1gka36B/CnzgZFPaBJAAAAABJRU5ErkJggg=="/></a></div>
-                <div class="icone"><a target="_blank" href="https://wa.me/qr/6QMVANDBW4ZHM1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a></div>
+            <div class="logo">
+                <a href="#je_pose_mon_ancre" class="logo-link">
+                    <span class="logo-accent">Smart</span> Innovation
+                </a>
             </div>
-            <nav class="navbar">
+            <div class="social">
+                <div class="icone">
+                    <a target="_blank" title="Facebook" href="https://www.facebook.com/dan.ndala.56" aria-label="Facebook">
+                        <svg class="icon icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                </div>
+                <div class="icone">
+                    <a target="_blank" title="Instagram" href="#" aria-label="Instagram">
+                        <svg class="icon icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                </div>
+                <div class="icone">
+                    <a target="_blank" title="LinkedIn" href="#" aria-label="LinkedIn">
+                        <svg class="icon icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+                <div class="icone">
+                    <a target="_blank" title="WhatsApp" href="https://wa.me/qr/6QMVANDBW4ZHM1" aria-label="WhatsApp">
+                        <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    </a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Changer de thème">
+                    <svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                    <svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+            </div>
+            <nav class="navbar" id="main-nav">
                 <div class="navbar-div">
-                    <a href="#je_pose_mon_ancre"><img class="navbar-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOFJREFUSEvtld0RQTEQhb/bgRZUgApQCSpBJXSCDqhACzpgjrm5E0nuzY/JE/uYbM63u3N20lA5msr65ABGwKktaAk8UopLBRjxaSt6BZIgqYAjsHIq1tkm1kUKICRudKOQGGAHbCNV7gHlBWMIsAYOsRG09xqVuvGiD5AjbkSDkBBATpEd5ZyckG3lLDmsCxdQKm4EPYgNUMX3gsrdLgUZm0W0AWptkjOTgVxpzXRfC3AD3lvf56JnYSee3m8B3G5DY/xqRH/AhzHPwNw6uQALx7opOVl/ctFqxD6cIlH70Qtl2ysZugObfgAAAABJRU5ErkJggg=="/></a>
-                    <a class="navbar-lien" href="#je_pose_mon_ancre">Home</a>
+                    <a class="navbar-lien-container" href="#je_pose_mon_ancre">
+                        <svg class="navbar-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        <span class="navbar-lien-text">Accueil</span>
+                    </a>
                 </div>
                 <div class="navbar-div">
-                    <a href="#about_us"><img class="navbar-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></a>
-                    <a class="navbar-lien" href="#about_us">About</a>
-                </div>
-                <di class="navbar-div">
-                    <a href="#voir_la_galerie"><img class="navbar-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJZJREFUSEvtlMkNgCAQRR8VWILaiaVoZVqKpWgHdqDhgDGQEQIZvcB5+NssBuVnlPGJEZyJAkSc3wkSDchlMQdqBKnZ+wICwZIDdYLiaBzA5z0YgBnoMi1swASskgNb0GaCu28Wo5cIcpsrTpPfg0oQRF8jkib6TubziA6gKVy0/XkJfAf2VCwF22zBx7dTUSg+/K5+TS/S9BYZ+RngMgAAAABJRU5ErkJggg=="/></a>
-                    <a class="navbar-lien" href="#voir_la_galerie">Galerie</a>
+                    <a class="navbar-lien-container" href="#about_us">
+                        <svg class="navbar-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                        <span class="navbar-lien-text">À propos</span>
+                    </a>
                 </div>
                 <div class="navbar-div">
-                    <a href="#contacter_nous"><img class="navbar-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATRJREFUSEvVle0xg0EURk8qkA5QASpABaggdEAF6IAKUAEqIB3QQUpIBzHH7Jqdtfsmu2SM+zO5ec4+9ysj1hyjNevzZ4AbYBM4A+Y/cZk7GAOPwEEQfQUOfxPwBuxkgvfBSRcnd7CoqHRDVgXIvQDsTVPkAGu+X1F4Bo6b1OHbmFqKSUHkPTS+eaJyB77QKUqjW1yR0pjOgI2EsA34WVeUNjkv0zVw1aVecKDOFuA+RBfWfa/gwqW8AxyM29oDarfIF18mPxJ4kkAUfwF2Q051T4aO3RNwlEB04h48hEGI4jGlCBkC+Ert56djqB3m6/RrnJedayE6qS1fCabD0/jFMkDMsyfn2fjWnNhwcz9jVUCcLkEuY7onKWianPpmQBSybEL8z3CkY/mKG9/ioGvX/j/gA/otMRlG5rFpAAAAAElFTkSuQmCC"/></a>
-                    <a class="navbar-lien" href="#contacter_nous">Contact</a>
+                    <a class="navbar-lien-container" href="#voir_la_galerie">
+                        <svg class="navbar-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span class="navbar-lien-text">Galerie</span>
+                    </a>
+                </div>
+                <div class="navbar-div">
+                    <a class="navbar-lien-container" href="#contacter_nous">
+                        <svg class="navbar-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span class="navbar-lien-text">Contact</span>
+                    </a>
                 </div>
             </nav>
         </header>
-        <section  id="je_pose_mon_ancre" class="ma_section">
+
+        <section id="je_pose_mon_ancre" class="ma_section">
             <div class="baniere">
-                <div>
-                    <h2 class="reveal-1">Smart</h2><br>
-                    <h2 class="reveal-2">innovation</h2>
+                <div class="baniere-content">
+                    <div class="baniere-titles">
+                        <h1 class="reveal-1">Smart</h1>
+                        <h1 class="reveal-2">Innovation</h1>
+                    </div>
+                    <div class="baniere-subtitles">
+                        <p class="reveal-3">Le professionnalisme au service de la jeunesse</p>
+                        <p class="reveal-4">Vos projets électriques assurés en toute sécurité</p>
+                        <div class="reveal-5 hero-actions">
+                            <a href="#contacter_nous" class="btn btn-primary">Nous contacter</a>
+                            <a href="#about_us" class="btn btn-secondary">En savoir plus</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p class="reveal-3">Le proffesionnalisme dans la jeunesse</p><br>
-                    <p class="reveal-4">Vos projets sont assurés</p>
-                </div>
+                <div class="baniere-overlay"></div>
             </div>
         </section>
+
         <section class="about">
             <div class="device reveal">
                 <div class="about-icone">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVlJREFUSEu1lWFRAzEQhb8qgCoAHIACWgWAgoICQAE4oHUACgAFUAXgABxAFZR5naST5rLZHDO3f24u2by3+3azGTGwjQbGpw/BPnAH6HsL/LYE10pwCDwDxwH0E7gC9K1aC4FA30LkKZgymHokHoEFHolckhqBtFbkURZLCpEcWTWpEbwAZ57GYV++FyVfi+A8FLURf+Omoj/mByyCb+CgDzqgM5Jqx0oE/4k+gkomybW1EoHSnPWMPro/AZcewTtwahCchHX57BV8lsDEI1gb4GkRBaIWdhunJJH6Oo/uFVBtUrsPsyldW+U3vkRQkkjdoS7JLe+2JonyIncKl7DcAA/Jf1ORNTm/kkMaaMqqZBojH8lGJ1Pros2B63DQG4ixKRaAMtqx2uEo1bjyuGgg/gCmjF506hQVsjNjQpi6VJJUfn7PGj6K0noea3sbOC8DK7Dm9cEJ/gCqwzoZ5ItDCwAAAABJRU5ErkJggg=="/>
+                    <svg class="icon icon-devise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
                 </div>
                 <h3>Notre devise</h3>
-                <p>Votre satisfaction est notre priorité</p>
+                <p>Votre satisfaction est notre priorité absolue</p>
             </div>
             <div class="device reveal">
                 <div class="about-icone">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvFVcENwjAMvE4CTABsBJPBSLABbIIO1ZWVnqM6StS+oursu7OdeMLgbxqcH7sSvACcNzok9qqwkYMbgMfG5Aa7A3iWMRHBB8BhBvN8qpCZGIlTBBbwnZOSSKpzpCZohVMEHswcLFWzi5LAqz+6EjW7KAmU1WqNXZkkzhMo9RYf1rho/grnCWpJsmO79GwUASfw30NVIjUxXUpEwlqTF1XBpZM9jMbUu2hWX5ZITYxdtCb1EYGfZ2LYrK5Phe8Fz83qIwf8n517xqSeawZkFs4bwCWzcJK7JobvupO7uPgBM0hQGeFcr2gAAAAASUVORK5CYII="/>     
+                    <svg class="icon icon-mission" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4.5c1.39-1.4 4.5-2 4.5-2z"/><path d="M12 15v5s3.03-.55 4.5-2c1.4-1.39 2-4.5 2-4.5z"/></svg>
                 </div>
                 <h3>Notre mission</h3>
-                <p>Assurés vos projets en vous offrant un service de qualité</p>
+                <p>Garantir la réussite de vos projets en vous offrant un service de haute qualité technique</p>
             </div>
             <div class="device reveal">
                 <div class="about-icone">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaxJREFUSEu9lYExBEEQRd9FgAgQASJABkSACBABIkAEiAARIAJEgAgQAfWuuq/m5ub2jiu6amt3Znf+n/7zu7fHH0fvj/GZhmAXWAdW43JPT3HdALddm+wi2AJOgaUJWb4Ch4BkIzGO4AzYb3y/FnOPjXeukWgoWgQJ/gkchyw7wEmMBXD+KOS5j/EccA4clAw1gbJcA4JvAKb/HguWY+xwPp4Fdd6xRI63S7lqAgEXgT3gEvCAL2Knkpfh+zKz/FYMSftREuQHz4VbEkRtla6MzPYhsk13rZRZlAQtMNPWopshQUmgLMr3ASzEC/XXeVeR/VAGelt2neKz8RV3AQSqwzl1z/fWig5zfd9xZQYJ1sD51VQf+18JWhLVEkwr0cAosxxyeUaJ03nIabvBAUUt6PWsi5ls6uK60HJHdsy60LKlZHvIb9/KBjmuVai93vf+EnerM61qDTjvPRvgXYw7W4VZ5M4Es6m5wGJrNTur2GK080o2sdmlxpPade62PJMR8LoOaguquUQ2v65Qc/X/0Q+ndotktgFbiaHPdZugTeAEmOaf/Ks+8W8E39T2dhnnD3rTAAAAAElFTkSuQmCC"/>
+                    <svg class="icon icon-vision" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
                 </div>
                 <h3>Notre vision</h3>
-                <p>Vous offrir un travail de qualité à moindre coût</p>
+                <p>Rendre l'énergie électrique moderne et solaire accessible à tous à un coût maîtrisé</p>
             </div>
         </section>
-        <section>
+
+        <section class="presentation-section">
             <div id="about_us" class="presentation reveal">
-                <h3>Présentation</h3>
-                <p>La compétence essentielle de notre entreprise réside avant toute chose dans la planification et le montage d' installations électriques de base dans le respect des normes techniques,les plus modernes qui soient, tant pour les travaux neufs que dans le cadre des travaux de rénovation. <br> <br> Outre l'instalation de base réalisée dans des maisons d'habitation et des résidences privées, nous procédons également à la mise en place d'installation électriques complexes dans des bâtiment à usage commercial, industriel et agricol.</p>
-            </div>
-            <div class="image_for_presentation reveal">
-                <img src="image/presentation.jpg" alt="Photo pour la Présentation">
+                <h2 class="section-title">Présentation</h2>
+                <div class="presentation-layout">
+                    <div class="presentation-text">
+                        <p>La compétence essentielle de notre entreprise réside avant toute chose dans la planification et le montage d'installations électriques de base dans le respect des normes techniques les plus modernes qui soient, tant pour les travaux neufs que dans le cadre de rénovations.</p>
+                        <p>Outre l'installation de base réalisée dans des maisons d'habitation et des résidences privées, nous procédons également à la mise en place d'installations électriques complexes dans des bâtiments à usage commercial, industriel et agricole.</p>
+                    </div>
+                    <div class="image_for_presentation reveal">
+                        <div class="img-wrapper">
+                            <img src="image/presentation.jpg" alt="Présentation de nos installations électriques">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
-            <h3 class="service-title">Nos services</h3>
+
+        <section class="services-section">
+            <h2 class="service-title reveal">Nos services</h2>
             <div class="contenair-service reveal">
-                <div>
-                    <div class="service">
-                        <div>
-                            <img class="service-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVtJREFUSEu1leExBEEQhb+LgAyQARkQARkgAkIgAiUDMiACMiADJwMioL6rnavZMbM9t+X6193O9ns9r1/3LthyLLaMTy/BIXAFXAwFPQC3wDIqsIdgH3gDdguwL+AoImkRCHoHHFeAy6IlegUuAX+PokbQqjhSQ/CDkqRG8AScRmiN82fgLD+rEdi4vZkE5nqLdZQEyvMxEzylSbB2V06gFV86mpqAvgHlPJ9yV06wifaC67D3gaTs2WOamZzgpyHN/fDyznCeg0/deoUdETitN4BAet1IlUeS/iFw/Gt6ngxSCGgoSwRelUgHmZykSIo5QInEZxG4EvrOykm9Nk0k5kROa9o0VdwatLRnyqWXe+MTUInmoHmwiV1L43WtilYvogFXe3NHG7W1rpVBV9msaC8pixa+7l3XZaWtG43c0rpezxfNXEkcuDQn+tz///LJjLSfPO+9wWySX/3sSRlkajjpAAAAAElFTkSuQmCC"/>    
+                <div class="service-col">
+                    <div class="service reveal">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                         </div>
-                        <div>
-                            <p>Installation bâtiment</p>
+                        <div class="service-body">
+                            <h3>Installation bâtiment</h3>
+                            <p>Câblage complet, tableaux électriques et raccordements de réseaux résidentiels.</p>
                         </div>
                     </div>
-                    <div class="service">
-                        <div>
-                            <img class="service-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVtJREFUSEu1leExBEEQhb+LgAyQARkQARkgAkIgAiUDMiACMiADJwMioL6rnavZMbM9t+X6193O9ns9r1/3LthyLLaMTy/BIXAFXAwFPQC3wDIqsIdgH3gDdguwL+AoImkRCHoHHFeAy6IlegUuAX+PokbQqjhSQ/CDkqRG8AScRmiN82fgLD+rEdi4vZkE5nqLdZQEyvMxEzylSbB2V06gFV86mpqAvgHlPJ9yV06wifaC67D3gaTs2WOamZzgpyHN/fDyznCeg0/deoUdETitN4BAet1IlUeS/iFw/Gt6ngxSCGgoSwRelUgHmZykSIo5QInEZxG4EvrOykm9Nk0k5kROa9o0VdwatLRnyqWXe+MTUInmoHmwiV1L43WtilYvogFXe3NHG7W1rpVBV9msaC8pixa+7l3XZaWtG43c0rpezxfNXEkcuDQn+tz///LJjLSfPO+9wWySX/3sSRlkajjpAAAAAElFTkSuQmCC"/>    
+                    <div class="service reveal">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                         </div>
-                        <div>
-                            <p>Dépannage électrique domestique</p>
+                        <div class="service-body">
+                            <h3>Dépannage domestique</h3>
+                            <p>Diagnostic rapide de pannes, court-circuit et mise en conformité réglementaire.</p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="service">
-                        <div>
-                            <img class="service-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVtJREFUSEu1leExBEEQhb+LgAyQARkQARkgAkIgAiUDMiACMiADJwMioL6rnavZMbM9t+X6193O9ns9r1/3LthyLLaMTy/BIXAFXAwFPQC3wDIqsIdgH3gDdguwL+AoImkRCHoHHFeAy6IlegUuAX+PokbQqjhSQ/CDkqRG8AScRmiN82fgLD+rEdi4vZkE5nqLdZQEyvMxEzylSbB2V06gFV86mpqAvgHlPJ9yV06wifaC67D3gaTs2WOamZzgpyHN/fDyznCeg0/deoUdETitN4BAet1IlUeS/iFw/Gt6ngxSCGgoSwRelUgHmZykSIo5QInEZxG4EvrOykm9Nk0k5kROa9o0VdwatLRnyqWXe+MTUInmoHmwiV1L43WtilYvogFXe3NHG7W1rpVBV9msaC8pixa+7l3XZaWtG43c0rpezxfNXEkcuDQn+tz///LJjLSfPO+9wWySX/3sSRlkajjpAAAAAElFTkSuQmCC"/>    
+                <div class="service-col">
+                    <div class="service reveal">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/><path d="M8 8h8v8H8z"/></svg>
                         </div>
-                        <div>
-                            <p>Installation de panneaux solaires</p>
+                        <div class="service-body">
+                            <h3>Panneaux solaires</h3>
+                            <p>Étude de rendement, pose de capteurs solaires, onduleurs et batteries de stockage.</p>
                         </div>
                     </div>
-                    <div class="service">
-                        <div>
-                            <img class="service-icone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVtJREFUSEu1leExBEEQhb+LgAyQARkQARkgAkIgAiUDMiACMiADJwMioL6rnavZMbM9t+X6193O9ns9r1/3LthyLLaMTy/BIXAFXAwFPQC3wDIqsIdgH3gDdguwL+AoImkRCHoHHFeAy6IlegUuAX+PokbQqjhSQ/CDkqRG8AScRmiN82fgLD+rEdi4vZkE5nqLdZQEyvMxEzylSbB2V06gFV86mpqAvgHlPJ9yV06wifaC67D3gaTs2WOamZzgpyHN/fDyznCeg0/deoUdETitN4BAet1IlUeS/iFw/Gt6ngxSCGgoSwRelUgHmZykSIo5QInEZxG4EvrOykm9Nk0k5kROa9o0VdwatLRnyqWXe+MTUInmoHmwiV1L43WtilYvogFXe3NHG7W1rpVBV9msaC8pixa+7l3XZaWtG43c0rpezxfNXEkcuDQn+tz///LJjLSfPO+9wWySX/3sSRlkajjpAAAAAElFTkSuQmCC"/>    
+                    <div class="service reveal">
+                        <div class="service-icon-wrapper">
+                            <svg class="service-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="15" x2="23" y2="15"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="15" x2="4" y2="15"/></svg>
                         </div>
-                        <div>
-                            <p>Design électrique</p>
+                        <div class="service-body">
+                            <h3>Design électrique</h3>
+                            <p>Plans d'implantation en 3D, schémas de câblages et éclairages personnalisés.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="projet">
-            <div class="box-contenair-projet reveal">
-                <div class="box-contenair-icone">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/>
+            <div class="box-container-projet reveal">
+                <div class="box-container-icone">
+                    <svg class="icon icon-stat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
                 <p class="big-lettre">8</p>
-                <p>Membres</p>
+                <p class="stat-label">Membres experts</p>
             </div>
-            <div class="box-contenair-projet reveal">
-                <div class="box-contenair-icone">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALZJREFUSEvtldENgzAMRB8TdATKJh2FTtaO0lHoBmwACiKSIzU9NxAhpPJrcs93hrih8tNU1kcBbsADuGYaGYA78Mo1qgBBoBUuwztdKWBaD+YaUXUZkRJQ9QSg8vZ+D8lcrHVP3r9AlrlYQLTrFVHvLdqHA2IDOXff6i4HuwJUpkV1NYNdHXzKuTqgKBZ7vaiI/oDkTx6By5ZMzNl3XFJ2BuE2fToWjOohiPdxy6mNpsRk/fyAGQZsJRmfq4guAAAAAElFTkSuQmCC"/>
+            <div class="box-container-projet reveal">
+                <div class="box-container-icone">
+                    <svg class="icon icon-stat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                 </div>
                 <p class="big-lettre">15</p>
-                <p>Réalisation</p>
+                <p class="stat-label">Réalisations majeures</p>
             </div>
-            <div class="box-contenair-projet reveal">
-                <div class="box-contenair-icone">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQNJREFUSEu1lOERAUEMRt9VQAsqQAXogApQASpABagAHegAHVCBFqiAyczeDG6zm72Zze8k78u3mxRkjiJzfyyAJjADhkDHCboBJ2AHPEMiY4AJsAEE4gtpPnUwb0IIIM33RgtHGkQDiOJHQPk/VyZp+ezSACtgaVRfpq0BqfsJDSCP2E4ESE3XCngnNi/TK4K1CbIDLkAvcYor0LdaNHf/P4WxALZWgOSlPPT9a8tNv0iS5CyIVY3IGC9njQiqROxUiKfnCGDghCSfirLgAIwVyBGQk6JGbAIpDN0k9Qapi+GREtuJoEjLBNkBKbuQ/IvKAm2KqAPRBEfIDqhtk3WC2oAPeqUlGWWCbuQAAAAASUVORK5CYII="/>
+            <div class="box-container-projet reveal">
+                <div class="box-container-icone">
+                    <svg class="icon icon-stat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
                 <p class="big-lettre">3</p>
-                <p>Partenaire</p>
+                <p class="stat-label">Partenaires officiels</p>
             </div>
         </section>
+
         <section class="recente-realisation reveal">
-            <h3 class="recente-realisation-title">Récente réalisation</h3>
+            <h2 class="recente-realisation-title">Nos Récentes Réalisations</h2>
             <div class="recente-realisation-image">
                 <div id="carousel1">
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/lampe.jpg" alt="photo d'une lampe">
+                            <img src="image/lampe.jpg" alt="Installation d'éclairage suspendu">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/plafond.jpg" alt="photo d'une réalisation">
+                            <img src="image/plafond.jpg" alt="Installation de plafonnier LED moderne">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation14.jpg" alt="Photo d'une réalisation" >
+                            <img src="image/realisation14.jpg" alt="Travaux électriques terminés">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation28.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation28.jpg" alt="Câblages électriques de précision">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation29.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation29.jpg" alt="Installation électrique résidentielle">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation31.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation31.jpg" alt="Système de distribution électrique">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation34.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation34.jpg" alt="Raccordement de tableau électrique">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation15.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation15.jpg" alt="Chantier de pose électrique">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation16.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation16.jpg" alt="Pose de prises et interrupteurs">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation20.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation20.jpg" alt="Intégration domotique">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation22.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation22.jpg" alt="Armoire de distribution">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/disjoncteur.jpg" alt="Photo d'une réalisation">
+                            <img src="image/disjoncteur.jpg" alt="Tableau de disjoncteurs modernes">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation35.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation35.jpg" alt="Installation en cours">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation30.jpg" alt="Photo d'une réalisation">
+                            <img src="image/realisation30.jpg" alt="Projet électrique finalisé">
                         </div>
                     </div>
                 </div>
             </div>          
         </section>
+
         <section class="membres">
-            <h3>Membres</h3>
+            <h2 class="reveal">Membres de l'équipe</h2>
             <div class="contenair-membres">
                 <div class="membre reveal">
-                    <img class="membre-image" src="image/technicien1.jpg" alt="photo des membres">
-                    <div>
+                    <div class="membre-img-wrapper">
+                        <img class="membre-image" src="image/technicien1.jpg" alt="Bernard Ndala">
+                    </div>
+                    <div class="membre-info">
                         <h3>Bernard Ndala</h3>
-                    </div>
-                    <div>
-                        <p>Electronics and electrical engineer,<strong>Company director</strong></p>
-                    </div>
-                    <div>
-                        <p class="petite-phrase">faites le choix d'une main d'oeuvre jeune et proffessionnelle</p>
-                    </div>
-                    <div>
-                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
-                    </div>
-                </div>
-                <div class="membre reveal">
-                    <img class="membre-image" src="image/technicien7.jpg" alt="photo des membres">
-                    <div>
-                        <h3>Fuiny victor</h3>
-                    </div>
-                    <div>
-                        <p>Smart innovation's member</p>
-                    </div>
-                    <div>
-                        <p class="petite-phrase">L'avis d'un homme sage vaut un oracle</p>
-                    </div>
-                    <div>
-                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
-                    </div>
-                </div>
-                <div class="membre reveal">
-                    <img class="membre-image" src="image/technicien2.jpg" alt="photo des membres">
-                    <div>
-                        <h3>Allegresse Mujanda</h3>
-                    </div>
-                    <div>
-                        <p>Electronics engineer</p>
-                    </div>
-                    <div>
-                        <p class="petite-phrase">la force est dans la jeunesse</p>
-                    </div>
-                    <div>
-                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
-                    </div>
-                </div>
-                <div class="membre reveal">
-                    <img class="membre-image" src="image/technicien3.jpg" alt="photo des membres">
-                    <div>
-                        <h3>Gracias Mujanda</h3>
-                    </div>
-                    <div>
-                        <p>Electronics engineer</p>
-                    </div>
-                    <div>
-                        <p class="petite-phrase">Une jeunesse proffesionnelle</p>
-                    </div>
-                    <div>
-                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
-                    </div>
-                </div>
-                <div class="membre reveal">
-                    <img class="membre-image" src="image/technicien4.jpg" alt="photo des membres">
-                    <div>
-                        <h3>Asnath</h3>
-                    </div>
-                    <div>
-                        <p>Smart innovation's member</p>
-                    </div>
-                    <div>
-                        <div>
-                            <p class="petite-phrase">je  suis "smart innovation"</p>
+                        <p class="role">Ingénieur Électricien & Électronicien, <strong>Directeur de l'Entreprise</strong></p>
+                        <p class="petite-phrase">"Faites le choix d'une main d'œuvre jeune et hautement professionnelle."</p>
+                        <div class="membre-social">
+                            <a title="Facebook" href="https://www.facebook.com/dan.ndala.56" aria-label="Facebook">
+                                <svg class="icon icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="https://wa.me/qr/6QMVANDBW4ZHM1" aria-label="WhatsApp">
+                                <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            </a>
                         </div>
-                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
                     </div>
                 </div>
                 <div class="membre reveal">
-                    <img class="membre-image" src="image/technicien5.jpg" alt="photo des membres">
-                    <div>
+                    <div class="membre-img-wrapper">
+                        <img class="membre-image" src="image/technicien7.jpg" alt="Fuiny Victor">
+                    </div>
+                    <div class="membre-info">
+                        <h3>Fuiny Victor</h3>
+                        <p class="role">Membre de l'équipe Smart Innovation</p>
+                        <p class="petite-phrase">"L'avis d'un homme sage vaut un oracle."</p>
+                        <div class="membre-social">
+                            <a title="Facebook" href="#" aria-label="Facebook">
+                                <svg class="icon icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <div class="membre-img-wrapper">
+                        <img class="membre-image" src="image/technicien2.jpg" alt="Allegresse Mujanda">
+                    </div>
+                    <div class="membre-info">
+                        <h3>Allegresse Mujanda</h3>
+                        <p class="role">Ingénieur en Électronique</p>
+                        <p class="petite-phrase">"La force réside dans la jeunesse."</p>
+                        <div class="membre-social">
+                            <a title="Facebook" href="#" aria-label="Facebook">
+                                <svg class="icon icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <div class="membre-img-wrapper">
+                        <img class="membre-image" src="image/technicien3.jpg" alt="Gracias Mujanda">
+                    </div>
+                    <div class="membre-info">
+                        <h3>Gracias Mujanda</h3>
+                        <p class="role">Ingénieur en Électronique</p>
+                        <p class="petite-phrase">"Une jeunesse professionnelle et qualifiée."</p>
+                        <div class="membre-social">
+                            <a title="Facebook" href="#" aria-label="Facebook">
+                                <svg class="icon icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <div class="membre-img-wrapper">
+                        <img class="membre-image" src="image/technicien4.jpg" alt="Asnath">
+                    </div>
+                    <div class="membre-info">
+                        <h3>Asnath</h3>
+                        <p class="role">Membre Smart Innovation</p>
+                        <p class="petite-phrase">"Je suis Smart Innovation, au service de vos projets."</p>
+                        <div class="membre-social">
+                            <a title="Facebook" href="#" aria-label="Facebook">
+                                <svg class="icon icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="membre reveal">
+                    <div class="membre-img-wrapper">
+                        <img class="membre-image" src="image/technicien5.jpg" alt="Gift L">
+                    </div>
+                    <div class="membre-info">
                         <h3>Gift L</h3>
-                    </div>
-                    <div>
-                        <p class="petite-phrase">Smart innovation's member</p>
-                    </div>
-                    <div>
-                        <p>oeuvrons ensemble</p>
-                    </div>
-                    <div>
-                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
+                        <p class="role">Membre Smart Innovation</p>
+                        <p class="petite-phrase">"Œuvrons ensemble pour un avenir plus vert."</p>
+                        <div class="membre-social">
+                            <a title="Facebook" href="#" aria-label="Facebook">
+                                <svg class="icon icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="membre reveal">
-                    <img class="membre-image" src="image/technicien6.jpg" alt="photo des membres">
-                    <div>
-                        <h3>Master emmanuel</h3>
+                    <div class="membre-img-wrapper">
+                        <img class="membre-image" src="image/technicien6.jpg" alt="Master Emmanuel">
                     </div>
-                    <div>
-                        <p>Smart innovation's member</p>
-                    </div>
-                    <div>
-                        <p class="petite-phrase">je choisis smart et vous?</p>
-                    </div>
-                    <div>
-                        <a title="#" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/></a>
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/></a>
+                    <div class="membre-info">
+                        <h3>Master Emmanuel</h3>
+                        <p class="role">Membre Smart Innovation</p>
+                        <p class="petite-phrase">"Je choisis Smart, et vous ?"</p>
+                        <div class="membre-social">
+                            <a title="Facebook" href="#" aria-label="Facebook">
+                                <svg class="icon icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <svg class="icon icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container-temoignage">
-            <h3>Témoignage</h3>
+
+        <section class="container-temoignage reveal">
+            <h2 class="section-title">Témoignages de nos clients</h2>
             <div class="contenair-temoins">
                 <div class="temoins reveal">
-                    <div>
-                        <img class="temois-image" src="image/jonathan.jpg" alt="Photo de Jean-Marie">
+                    <div class="temoin-header">
+                        <div class="temoin-img-wrapper">
+                            <img class="temois-image" src="image/jonathan.jpg" alt="Jonathan">
+                        </div>
+                        <div class="temoin-meta">
+                            <h3>Jonathan</h3>
+                            <p class="profession">Ingénieur Réseau, Client</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Jonathann</h3>
-                        <p>Network engineer, client(e)</p>
-                        <p>De la jeunesse pour nos maisons, des solutions jeunes et innovates!!! je vous recommandes Smart innovation, vous ne serez jamais déçu. Le professionnalisme dans la simplicité.</p>
-                    </div>
-                </div>
-                <div class="temoins reveal">
-                    <div>
-                        <img class="temois-image" src="image/madame_julie.jpg" alt="Photo de Jean-Marie">
-                    </div>
-                    <div>
-                        <h3>Madame julie</h3>
-                        <p>lawyer,client(e)</p>
-                        <p>Globalement je suis très satisfaite de la prestation réalisée par l'entreprise et je vous la recommande</p>
+                    <div class="temoin-body">
+                        <p class="quote">"De la jeunesse pour nos maisons, des solutions jeunes et innovantes ! Je vous recommande vivement Smart Innovation, vous ne serez jamais déçus. Le professionnalisme dans la simplicité."</p>
                     </div>
                 </div>
                 <div class="temoins reveal">
-                    <div>
-                        <img class="temois-image" src="image/monsieur_yves.jpg" alt="Photo de ruth">
+                    <div class="temoin-header">
+                        <div class="temoin-img-wrapper">
+                            <img class="temois-image" src="image/madame_julie.jpg" alt="Madame Julie">
+                        </div>
+                        <div class="temoin-meta">
+                            <h3>Madame Julie</h3>
+                            <p class="profession">Avocate, Cliente</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Yves Kabange</h3>
-                        <p>Doctor surgeon, client(e)</p>
-                        <p>Optez pour une main d'oeuvre professionnelle et jeune, et vous serez satisfait par la qualité du travaille, j'en suis témoin </p>
-                    </div>
-                </div>
-                <div class="temoins reveal">
-                    <div>
-                        <img class="temois-image" src="image/patient.jpg" alt="Photo de patient">
-                    </div>
-                    <div>
-                        <h3>Patient Kasongo</h3>
-                        <p>Dévellopeur web, client(e)</p>
-                        <p>Des nos jours, tout le monde a besoin d'une installation  électrique de qualité respectant toutes les normes techniques, je vous conseille vivement de choisir smart innovation, vous serez très satisfait</p>
+                    <div class="temoin-body">
+                        <p class="quote">"Globalement je suis très satisfaite de la prestation réalisée par l'entreprise et je vous la recommande pour tous vos projets électriques."</p>
                     </div>
                 </div>
                 <div class="temoins reveal">
-                    <div>
-                        <img class="temois-image" src="image/kavira.jpg" alt="Photo de frankline">
+                    <div class="temoin-header">
+                        <div class="temoin-img-wrapper">
+                            <img class="temois-image" src="image/monsieur_yves.jpg" alt="Yves Kabange">
+                        </div>
+                        <div class="temoin-meta">
+                            <h3>Yves Kabange</h3>
+                            <p class="profession">Docteur Chirurgien, Client</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Frankline kavira</h3>
-                        <p>client(e)</p>
-                        <p>Choisir smart innovation,c'est choisir de soutenir la jeunesse, c'est choisir un travail de qualité, alors je choisis smart et vous?</p>
+                    <div class="temoin-body">
+                        <p class="quote">"Optez pour une main d'œuvre professionnelle et jeune, et vous serez satisfaits par la qualité du travail, j'en suis témoin direct."</p>
                     </div>
                 </div>
                 <div class="temoins reveal">
-                    <div>
-                        <img class="temois-image" src="image/ruth.jpg" alt="Photo de clédia">
+                    <div class="temoin-header">
+                        <div class="temoin-img-wrapper">
+                            <img class="temois-image" src="image/patient.jpg" alt="Patient Kasongo">
+                        </div>
+                        <div class="temoin-meta">
+                            <h3>Patient Kasongo</h3>
+                            <p class="profession">Développeur Web, Client</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Ruth Nzeng</h3>
-                        <p>client(e)</p>
-                        <p>J'ai été très satisfait par le travail réaliser par smart innovation, alors je me permet de dire "installation électrique de qualité=smart innovation"</p>
+                    <div class="temoin-body">
+                        <p class="quote">"De nos jours, tout le monde a besoin d'une installation électrique de qualité respectant toutes les normes techniques. Je vous conseille vivement de choisir Smart Innovation, vous serez très satisfait."</p>
+                    </div>
+                </div>
+                <div class="temoins reveal">
+                    <div class="temoin-header">
+                        <div class="temoin-img-wrapper">
+                            <img class="temois-image" src="image/kavira.jpg" alt="Frankline Kavira">
+                        </div>
+                        <div class="temoin-meta">
+                            <h3>Frankline Kavira</h3>
+                            <p class="profession">Cliente</p>
+                        </div>
+                    </div>
+                    <div class="temoin-body">
+                        <p class="quote">"Choisir Smart Innovation, c'est choisir de soutenir la jeunesse, c'est choisir un travail de qualité. Alors, je choisis Smart et vous ?"</p>
+                    </div>
+                </div>
+                <div class="temoins reveal">
+                    <div class="temoin-header">
+                        <div class="temoin-img-wrapper">
+                            <img class="temois-image" src="image/ruth.jpg" alt="Ruth Nzeng">
+                        </div>
+                        <div class="temoin-meta">
+                            <h3>Ruth Nzeng</h3>
+                            <p class="profession">Cliente</p>
+                        </div>
+                    </div>
+                    <div class="temoin-body">
+                        <p class="quote">"J'ai été très satisfaite par le travail réalisé par Smart Innovation, alors je me permets de dire : Installation électrique de qualité = Smart Innovation."</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="galerie reveal" id="voir_la_galerie">
-            <h3>Galerie</h3>
+            <h2 class="section-title">Notre Galerie de Réalisations</h2>
             <div class="galerie-image-contenair">
                 <div id="carousel2">
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation7.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation7.jpg" alt="Projet d'installation électrique">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation18.jpg" alt="photo d'une réalisation">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__image"><img src="image/realisation12.jpg" alt="photo d'une réalisation"></div>
-                    </div>
-                    <div class="item">
-                        <div class="item__image">
-                            <img src="image/realisation25.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation18.jpg" alt="Travaux électriques">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation11.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation12.jpg" alt="Installation de tableaux">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation10.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation25.jpg" alt="Montage d'équipements">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation31.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation11.jpg" alt="Pose de luminaires">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation8.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation10.jpg" alt="Installation de câbles">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/lampe.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation31.jpg" alt="Finitions soignées">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/plafond.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation8.jpg" alt="Raccordement électrique">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation3.jpg" alt="photo d'une réalisation">
+                            <img src="image/lampe.jpg" alt="Applique murale installée">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation26.jpg" alt="photo d'une réalisation">
+                            <img src="image/plafond.jpg" alt="Leds de plafond encastrées">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation5.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation3.jpg" alt="Raccordements complexes">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation23.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation26.jpg" alt="Installation en résidentiel">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation22.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation5.jpg" alt="Domotique et sécurité">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation21.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation23.jpg" alt="Schéma et boîte de dérivation">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation20.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation22.jpg" alt="Réseau électrique de bureau">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation19.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation21.jpg" alt="Pose de tableau principal">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation17.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation20.jpg" alt="Raccordement de gaines">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation8.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation19.jpg" alt="Installation de compteurs">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation16.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation17.jpg" alt="Fin de chantier">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation15.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation8.jpg" alt="Raccordement de tableau">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation14.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation16.jpg" alt="Appareillages modulaires">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation44.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation15.jpg" alt="Installation d'interrupteurs">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation43.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation14.jpg" alt="Tableau de disjoncteurs finalisé">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation42.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation44.jpg" alt="Passage de câbles">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation41.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation43.jpg" alt="Chantier de câblage industriel">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation40.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation42.jpg" alt="Armoire électrique raccordée">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation37.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation41.jpg" alt="Disjoncteurs différentiels">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation39.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation40.jpg" alt="Pose de disjoncteurs">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation38.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation37.jpg" alt="Armoire de commande">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation36.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation39.jpg" alt="Chantier industriel">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation35.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation38.jpg" alt="Gros plan tableau électrique">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation34.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation36.jpg" alt="Installation de compteurs divisionnaires">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation31.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation35.jpg" alt="Gaines de distribution">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation30.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation34.jpg" alt="Raccordement de tableau">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation29.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation31.jpg" alt="Mise en conformité">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation28.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation30.jpg" alt="Finition interrupteur">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation27.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation29.jpg" alt="Installation de luminaires LED">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation25.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation28.jpg" alt="Câblages électriques de précision">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation24.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation27.jpg" alt="Prise de courant installée">
                         </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
-                            <img src="image/realisation45.jpg" alt="photo d'une réalisation">
+                            <img src="image/realisation25.jpg" alt="Chantier résidentiel">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation24.jpg" alt="Éclairage extérieur moderne">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item__image">
+                            <img src="image/realisation45.jpg" alt="Installation électrique terminée">
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
         <section class="contact" id="contacter_nous">
-            <h3>Contact</h3>
-            <form action="" method="post">
+            <h2 class="section-title">Nous Contacter</h2>
+            <form action="" method="post" class="contact-form">
                 <div class="contact-contenair">
                     <div class="my-contact reveal">
-                        <div>
+                        <div class="contact-card">
                             <div class="my-contact-icone">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU5JREFUSEu1lO1RQkEMRQ8dSAVoBWgFWAJWoB2AnWgHUAF0IFagVoB2oBXIXGaXWfOyXzOSn2/z7sneJDvizDE6sz4tgEtgAdwC16Ggd2AHPAOfpSJrgKcgXtJQzmMuoQRQldNGC5V74+XmAC2VWz3ZtbQfPYA835vEr/CzKlWoFypiYvKubE88gK1e4hL8NmIXgIApZHALD2C9vwO2mV7MgU1yNuiFB/g1YmOn+pji2flH878BP4CsO4UH0ALNkpwei17DQhYBK+A+AWhTNeNek98A2RRjDTzUbqAn4cX0QRDN+Ef4rgXUtKXiOlIhcZSPqblF69niWMvAnhLAu0VmUk+fB9WXADrreS7cZ6IG0HmLVa418V6151ozrbHNvapquuy0E1YcU+t1DlIVb7EowiykSbwHoFxB1HiFdiJrS23RauPYdV5rcpeYl3wAl91AGYDJRKAAAAAASUVORK5CYII="/>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             </div>
-                            <div>
-                                <h3 class="contact-title">Location:</h3>
-                                <P class="contact-information">République Démocratique du Congo <br>Lubumbashi, commune Annexe <br> 70 avenue NKalanyi Q/ Malela</P>
+                            <div class="contact-card-content">
+                                <h3 class="contact-title">Location</h3>
+                                <p class="contact-information">République Démocratique du Congo<br>Lubumbashi, Commune Annexe<br>70 Avenue Nkalanyi, Q. Malela</p>
                             </div>
                         </div>
-                        <div>
+                        <div class="contact-card">
                             <div class="my-contact-icone">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARRJREFUSEvdlNFxwjAQRB8VJB0AFZAS0gmkg1BJ6ADSSUoIHUAHpAKYzdxlNLLkk834g+jHY/u073ZPoxkTr9nE+vxPwCuwBxYj4zsBb8CX9pciUsF8pLhvk8ayBrha1QXYAodG2Ab4AJ6t/rf5kgMHuK4AAglYWhKUsADpCgHKcQc8Ad+Wq57perF56fkDvNv7X/N9DvRPG+VgZQ7SyNJIjuZADXgCoQOHKwI5WVvrPhOP5NM69whDQG2mEvTIVOOR5IegCsiH2xlYEpn+CZjPRN/vArSc2NERtYj3OnCBWlStF2PoYHJAFEXfYfC9Z78sI9u5mOojgMR1wqq3aeqgBIgcdi+kQTsGFkcRDZTrlj8+4AaNzzgZuJBekwAAAABJRU5ErkJggg=="/>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                             </div>
-                            <div>
+                            <div class="contact-card-content">
                                 <h3 class="contact-title">Email</h3>
-                                <p class="contact-information">smartinnovation@gmail.com</p>
+                                <p class="contact-information"><a href="mailto:smartinnovation@gmail.com">smartinnovation@gmail.com</a></p>
                             </div>
                         </div>
-                        <div>
+                        <div class="contact-card">
                             <div class="my-contact-icone">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATRJREFUSEvVle0xg0EURk8qkA5QASpABaggdEAF6IAKUAEqIB3QQUpIBzHH7Jqdtfsmu2SM+zO5ec4+9ysj1hyjNevzZ4AbYBM4A+Y/cZk7GAOPwEEQfQUOfxPwBuxkgvfBSRcnd7CoqHRDVgXIvQDsTVPkAGu+X1F4Bo6b1OHbmFqKSUHkPTS+eaJyB77QKUqjW1yR0pjOgI2EsA34WVeUNjkv0zVw1aVecKDOFuA+RBfWfa/gwqW8AxyM29oDarfIF18mPxJ4kkAUfwF2Q051T4aO3RNwlEB04h48hEGI4jGlCBkC+Ert56djqB3m6/RrnJedayE6qS1fCabD0/jFMkDMsyfn2fjWnNhwcz9jVUCcLkEuY7onKWianPpmQBSybEL8z3CkY/mKG9/ioGvX/j/gA/otMRlG5rFpAAAAAElFTkSuQmCC"/>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             </div>
-                            <div>
-                                <h3 class="contact-title">Télephone</h3>
-                                <p class="contact-information">+243993071034</p>
+                            <div class="contact-card-content">
+                                <h3 class="contact-title">Téléphone</h3>
+                                <p class="contact-information"><a href="tel:+243993071034">+243 993 071 034</a></p>
                             </div>
                         </div>
                     </div>
-                    <div class="my-contact reveal">
-                        <div>
-                            <input type="text" required placeholder="Votre nom">
+                    <div class="my-contact reveal form-wrapper">
+                        <div class="input-group">
+                            <input type="text" id="contact-nom" required placeholder=" ">
+                            <label for="contact-nom">Votre nom</label>
                         </div>
-                        <div>
-                            <input type="email" required placeholder="Votre mail">
+                        <div class="input-group">
+                            <input type="email" id="contact-email" required placeholder=" ">
+                            <label for="contact-email">Votre adresse e-mail</label>
                         </div>
-                        <div>
-                            <input type="email" required placeholder="Objet">
+                        <div class="input-group">
+                            <input type="text" id="contact-objet" required placeholder=" ">
+                            <label for="contact-objet">Objet du message</label>
                         </div>
-                        <div>
-                            <textarea name="" id="" cols="30" rows="10" required placeholder="Message"></textarea>
+                        <div class="input-group">
+                            <textarea id="contact-message" required placeholder=" "></textarea>
+                            <label for="contact-message">Votre message</label>
                         </div>
-                        <button type="submit" class="boutton">Envoyer le message</button>
+                        <button type="submit" class="boutton">
+                            <span>Envoyer le message</span>
+                            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
                     </div>
                 </div>
             </form>
         </section>
+
         <footer class="footer">
-            <p>Copyright 2022. all rights Reserved</p>
-            <p>Smart innovation</p>
+            <div class="footer-content">
+                <p>&copy; 2026 Smart Innovation. Tous droits réservés.</p>
+                <p class="footer-credit">Conçu avec passion pour une énergie durable et moderne.</p>
+            </div>
         </footer>
     </body>
 </html>
