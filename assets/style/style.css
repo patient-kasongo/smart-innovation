@@ -156,7 +156,8 @@ a:hover {
 /* Desktop Navigation */
 .navbar {
     display: flex;
-    gap: 8px;
+    gap: 4px;
+    flex-shrink: 0;
 }
 
 .navbar-div {
@@ -167,12 +168,13 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 20px;
+    padding: 10px 16px;
     color: var(--text-muted);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     border-radius: var(--radius-sm);
     transition: var(--transition-normal);
+    white-space: nowrap;
 }
 
 .navbar-lien-container:hover {
@@ -1375,6 +1377,10 @@ body.light-theme .input-group textarea:not(:placeholder-shown) ~ label {
 }
 
 /* Theme Toggle Button Styling */
+.theme-toggle-mobile {
+    display: none; /* Hidden on desktop, shown only on mobile via responsive.css */
+}
+
 .theme-toggle-btn {
     display: flex;
     justify-content: center;

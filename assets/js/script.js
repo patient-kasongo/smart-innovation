@@ -334,16 +334,19 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(r)
     })
 
-    // Theme Toggle Handler
+    // Theme Toggle Handler — syncs both desktop and mobile buttons
+    function applyThemeToggle() {
+        document.body.classList.toggle('light-theme');
+        localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
+    }
+
     const themeToggleBtn = document.getElementById('theme-toggle');
     if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', function() {
-            document.body.classList.toggle('light-theme');
-            if (document.body.classList.contains('light-theme')) {
-                localStorage.setItem('theme', 'light');
-            } else {
-                localStorage.setItem('theme', 'dark');
-            }
-        });
+        themeToggleBtn.addEventListener('click', applyThemeToggle);
+    }
+
+    const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+    if (themeToggleMobile) {
+        themeToggleMobile.addEventListener('click', applyThemeToggle);
     }
 })
