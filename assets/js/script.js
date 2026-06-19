@@ -233,7 +233,7 @@ class Carousel {
     }
 
     onWindowResize() {
-        let mobile = window.innerWidth < 800
+        let mobile = window.innerWidth <= 791
         if (mobile !== this.isMobile) {
             this.isMobile = mobile
         }

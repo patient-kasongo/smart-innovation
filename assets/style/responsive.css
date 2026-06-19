@@ -20,6 +20,14 @@
         padding: 0 16px;
         height: 58px;
         justify-content: space-between;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background-color: rgba(8, 12, 20, 0.95) !important;
+    }
+
+    body.light-theme .topbar {
+        background-color: rgba(248, 250, 252, 0.95) !important;
+        border-bottom-color: rgba(15, 23, 42, 0.08) !important;
     }
 
     .logo {
@@ -42,32 +50,52 @@
         display: none;
     }
 
-    /* Hide desktop navbar on mobile (floating bottom nav handles it) */
-    .navbar {
-        display: none;
-    }
-
+    
     /* Floating Bottom Mobile Navigation */
-    .navbar {
+    /*.navbar {
         position: fixed;
         bottom: 16px;
         left: 50%;
         transform: translateX(-50%);
         width: calc(100% - 40px);
         max-width: 420px;
-        height: 62px;
+        height: 56px;
         background-color: rgba(15, 21, 36, 0.88);
         backdrop-filter: var(--glass-blur);
         -webkit-backdrop-filter: var(--glass-blur);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 31px;
+        border-radius: 28px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-        display: flex !important; /* Override the display:none above */
+        display: flex !important; 
         justify-content: space-around;
         align-items: center;
         padding: 0 8px;
         z-index: 1000;
         animation: floatIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }*/
+    .navbar {
+        position: fixed;
+        bottom: 16px;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: calc(100vw - 40px);
+        max-width: 420px;
+
+        height: 56px;
+
+        display: flex !important;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10000;
+        background-color: rgba(15, 21, 36, 0.88);
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 28px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        
     }
 
     body.light-theme .navbar {
@@ -84,16 +112,15 @@
 
     .navbar-lien-container {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 3px;
-        padding: 6px 0;
+        padding: 8px;
         color: var(--text-muted);
-        font-size: 0.7rem;
         background-color: transparent !important;
         border: none;
-        width: 100%;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
         transition: var(--transition-fast);
     }
 
@@ -105,17 +132,34 @@
     }
 
     .navbar-lien-text {
-        display: inline-block;
-        font-size: 0.65rem;
-        font-weight: 500;
-        letter-spacing: 0.2px;
+        display: none;
     }
 
     .navbar-lien-container:hover,
     .navbar-lien-container:focus,
     .navbar-lien-container:active {
         color: var(--primary);
+        background-color: rgba(255, 255, 255, 0.08) !important;
     }
+
+    body.light-theme .navbar-lien-container:hover,
+    body.light-theme .navbar-lien-container:focus,
+    body.light-theme .navbar-lien-container:active {
+        color: var(--primary);
+        background-color: rgba(0, 0, 0, 0.05) !important;
+    }
+    .desktop-only {
+        display: none !important;
+    }
+    /*.mobile-only{
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100vw - 40px);
+        max-width: 420px;
+
+        margin: 0;
+    }*/
+
 
     /* Hero Banner Layout */
     .ma_section {

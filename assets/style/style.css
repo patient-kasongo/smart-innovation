@@ -51,6 +51,7 @@
     padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-height);
@@ -186,6 +187,10 @@ a:hover {
     width: 18px;
     height: 18px;
     display: none; /* Hidden on desktop, shown on mobile */
+}
+
+.mobile-only {
+    display: none !important;
 }
 
 /* Hero Section */
@@ -634,6 +639,7 @@ a:hover {
 .carousel {
     position: relative;
     padding: 20px 0;
+    overflow: hidden;
 }
 
 .carousel__container {
@@ -1377,9 +1383,7 @@ body.light-theme .input-group textarea:not(:placeholder-shown) ~ label {
 }
 
 /* Theme Toggle Button Styling */
-.theme-toggle-mobile {
-    display: none; /* Hidden on desktop, shown only on mobile via responsive.css */
-}
+
 
 .theme-toggle-btn {
     display: flex;
@@ -1403,6 +1407,9 @@ body.light-theme .input-group textarea:not(:placeholder-shown) ~ label {
     background-color: var(--primary-glow);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 229, 255, 0.2);
+}
+.theme-toggle-mobile {
+    display: none;
 }
 
 body.light-theme .theme-toggle-btn:hover {

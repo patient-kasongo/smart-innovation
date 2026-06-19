@@ -35,7 +35,7 @@
     <body>
         <header class="topbar">
             <div class="logo">
-                <a href="#je_pose_mon_ancre" class="logo-link">
+                <a href="#home" class="logo-link">
                     <span class="logo-accent">Smart</span> Innovation
                 </a>
                 <!-- Theme toggle visible on mobile beside logo -->
@@ -70,9 +70,9 @@
                     <svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
                 </button>
             </div>
-            <nav class="navbar" id="main-nav">
+            <nav class="navbar desktop-only" id="main-nav">
                 <div class="navbar-div">
-                    <a class="navbar-lien-container" href="#je_pose_mon_ancre">
+                    <a class="navbar-lien-container" href="#home">
                         <svg class="navbar-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                         <span class="navbar-lien-text">Accueil</span>
                     </a>
@@ -97,8 +97,34 @@
                 </div>
             </nav>
         </header>
+        <nav class="navbar mobile-only" id="mobile-nav">
+            <div class="navbar-div">
+                <a class="navbar-lien-container" href="#home">
+                    <svg class="navbar-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    <span class="navbar-lien-text">Accueil</span>
+                </a>
+            </div>
+            <div class="navbar-div">
+                <a class="navbar-lien-container" href="#about_us">
+                    <svg class="navbar-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    <span class="navbar-lien-text">À propos</span>
+                </a>
+            </div>
+            <div class="navbar-div">
+                <a class="navbar-lien-container" href="#voir_la_galerie">
+                    <svg class="navbar-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <span class="navbar-lien-text">Galerie</span>
+                </a>
+            </div>
+            <div class="navbar-div">
+                <a class="navbar-lien-container" href="#contacter_nous">
+                    <svg class="navbar-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span class="navbar-lien-text">Contact</span>
+                </a>
+            </div>
+        </nav>
 
-        <section id="je_pose_mon_ancre" class="ma_section">
+        <section id="home" class="ma_section">
             <div class="baniere">
                 <div class="baniere-content">
                     <div class="baniere-titles">
